@@ -12,6 +12,8 @@ function clickHeader(item, doc) {
 
 const btnBurger = document.querySelector('.burger');
 const popupHeader = document.querySelector('.popup');
+const popupHeaderWrapper = document.querySelector('.popup__wrapper');
+
 const btnBurger2 = popupHeader.querySelector('.burger');
 
 function openPopup() {
@@ -24,8 +26,15 @@ function closePopup() {
   btnBurger2.classList.remove('change');
   popupHeader.classList.remove('popup_activ');
 }
-
-btnBurger.addEventListener('click', openPopup);
+popupHeader.addEventListener('click', (e) => {
+  if (e.target.classList.contains('popup')) {
+    closePopup();
+  }
+});
+btnBurger.addEventListener('click', () => {
+  openPopup();
+  document.querySelector('.popup__wrapper').classList.add('popup__wrapper_activ');
+});
 btnBurger2.addEventListener('click', closePopup);
 
 clickHeader('.item', document);

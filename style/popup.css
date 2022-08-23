@@ -1,8 +1,9 @@
 .popup{
   position: fixed;
   top: 0;
-  right: -100%;
-  width: 0;
+  right: 0;
+  width: 100vw;
+display: none;
   height: 100vh;
   background: rgba(41, 41, 41, 0.6);
   transition: 2s;
@@ -14,13 +15,19 @@
   background: #292929;
   height: 100vh;
   position: absolute;
+  right: -320px;
+  transition: right 2s;
+  
+}
+.popup__wrapper_activ{
   right: 0;
-  transition: 2s;
+  
+  transition:right  2s ease-in ;
   
 }
 .popup_activ {
-  right: 0;
-  width: 100vw;
+ display: block;
+ 
 }
 .popup__wrapper .logo{
   max-width: 184px;
