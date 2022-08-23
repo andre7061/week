@@ -20,22 +20,28 @@ function openPopup() {
   btnBurger.classList.add('change');
   popupHeader.classList.add('popup_activ');
   btnBurger2.classList.add('change');
+  document.querySelector('.popup__wrapper').classList.add('popup__wrapper_activ');
 }
 function closePopup() {
   btnBurger.classList.remove('change');
   btnBurger2.classList.remove('change');
   popupHeader.classList.remove('popup_activ');
+  document.querySelector('.popup__wrapper').classList.remove('popup__wrapper_activ');
 }
 popupHeader.addEventListener('click', (e) => {
   if (e.target.classList.contains('popup')) {
+    document.querySelector('.popup__wrapper').classList.remove('popup__wrapper_activ');
     closePopup();
   }
 });
 btnBurger.addEventListener('click', () => {
   openPopup();
-  document.querySelector('.popup__wrapper').classList.add('popup__wrapper_activ');
 });
-btnBurger2.addEventListener('click', closePopup);
+btnBurger2.addEventListener('click', () => {
+  //closePopup();
+  document.querySelector('.popup__wrapper').classList.remove('popup__wrapper_activ');
+  setTimeout(closePopup, 2000);
+});
 
 clickHeader('.item', document);
 clickHeader('.item-popup', popupHeader);

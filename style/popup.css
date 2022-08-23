@@ -3,10 +3,11 @@
   top: 0;
   right: 0;
   width: 100vw;
-display: none;
+opacity: 0;
   height: 100vh;
   background: rgba(41, 41, 41, 0.6);
-  transition: 2s;
+  
+  z-index: -100;
   
 }
 .popup__wrapper{
@@ -26,8 +27,8 @@ display: none;
   
 }
 .popup_activ {
- display: block;
- 
+ opacity: 1;
+ z-index: 1000;
 }
 .popup__wrapper .logo{
   max-width: 184px;
