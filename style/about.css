@@ -1,0 +1,41 @@
+.about{
+  max-width: 1280px;
+  width: calc(100% - 430px);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+  flex-wrap: wrap;
+}
+.about__imges{
+
+  max-width: 300px;
+  max-height:408px ;
+  margin-right: 120px;
+}
+.about__content{
+  
+  max-width: 430px;
+  width: 100%;
+
+}
+.about__title{
+  max-width: 330px;
+  margin-top: 14px;
+  font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 35px;
+line-height: 130%;
+letter-spacing: 0.06em;
+color: #545454;
+}
+.about__subtitle{
+  margin-top: 25px;
+  font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 160%;
+color: #4C4C4C;
+}

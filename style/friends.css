@@ -1,0 +1,134 @@
+.friends{
+  max-width: 1200px;
+  width: calc(100% - 80px);
+  margin: 0 auto;
+}
+.friends__title{
+  text-align: center;
+  font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 35px;
+line-height: 130%;
+letter-spacing: 0.06em;
+color: #545454;
+max-width: 400px;
+margin: 0 auto;
+margin-top: 180px;
+}
+.slaider{
+  margin-top: 60px;
+  position: relative;
+}
+.slaider__content{
+  
+  margin-left: 105px;
+  margin-right: 105px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card{
+  margin-right: 90px;
+  max-width: 270px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: 1s;
+  
+}
+.card:hover .card__btn{
+ background: #FDDCC4;;
+}
+.card:last-of-type{
+  margin-right: 0;
+}
+.card__title{
+  margin: 0;
+  font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+letter-spacing: 0.06em;
+color: #545454;
+margin-top: 30px;
+}
+.card__btn{
+  width: 187px;
+height: 52px;
+border: 2px solid #F1CDB3;
+border-radius: 100px;
+font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 130%;
+letter-spacing: 0.06em;
+color: #292929;
+margin: 30px 0;
+cursor: pointer;
+transition: 0.5s;
+
+}
+.card__btn:hover{
+  background: #FDDCC4;
+}
+.friends__btn{
+  margin: 0 auto;
+  background: #F1CDB3;
+border-radius: 100px;
+width: 261px;
+height: 52px;
+cursor: pointer;
+transition: 0.5s;
+font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 130%;
+letter-spacing: 0.06em;
+color: #292929;
+border: none;
+display: block;
+margin-top: 60px;
+margin-bottom: 100px;
+cursor: pointer;
+}
+.friends__btn:hover{
+  background: rgba(253, 220, 196, 1)
+}
+.btn__prev,.btn__next{
+  width: 52px;
+  height: 52px;
+  border: 2px solid #F1CDB3;
+border-radius: 100px;
+display: flex;
+align-items: center;
+justify-content: center;
+position: absolute;
+top: calc(100% / 2 - 30px);
+cursor: pointer;
+transition: 0.5s;
+
+}
+.img__prev{
+  width: 14px;
+  height: 6px;
+  display: block;
+}
+.btn__prev{
+  left: 0;
+  
+}
+.btn__next{
+  right: 0;
+}
+ .btn__next:hover{
+  background: #FDDCC4;
+}
+.btn__prev:hover{
+  background: #FDDCC4;
+}

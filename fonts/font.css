@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'georgia';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/georgia.ttf') format('ttf')
+    
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+   
+}
